@@ -1,8 +1,9 @@
 .heading-primary {
-  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
+  color: $color-white;
+
 
   &--main {
     display: block;
@@ -23,7 +24,6 @@
 }
 
 body {
- 
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
