@@ -11,16 +11,16 @@
   }
 
   &--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
+    background-color: #fff;
+    color: #777;
   }
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
   }
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
   }
   &::after {
     content: "";
@@ -36,7 +36,7 @@
   }
 
   &--white::after {
-    background-color: $color-white;
+    background-color: #fff;
   }
   &:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
