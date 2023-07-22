@@ -15,6 +15,10 @@
     box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.1);
     cursor: pointer;
     text-align: center;
+    @media (max-width: 56.25em) {
+      top: 4rem;
+      right: 4rem;
+    }
   }
   &__back {
     height: 6rem;
@@ -23,6 +27,10 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
+    @media (max-width: 56.25em) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
     background-image: radial-gradient(#7ed56f, #28b485);
     z-index: 10;
     //transform: scale(80);

@@ -41,16 +41,28 @@
     overflow: hidden;
     opacity: 0;
     transition: all 0.4s 0.2s;
+    @media (max-width: 75em) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__left {
     width: 33.3333%;
     display: table-cell;
+    @media (max-width: 75em) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
   }
   &__right {
     width: 66.6666%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+    @media (max-width: 75em) {
+      width: 100%;
+    }
   }
 
   &:target {
@@ -72,5 +84,8 @@
     column-gap: 4rem;
     column-rule: 1px solid #999;
     hyphens: auto;
+    @media (max-width: 56.25em) {
+      column-count: 1;
+    }
   }
 }

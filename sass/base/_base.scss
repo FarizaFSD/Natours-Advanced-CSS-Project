@@ -5,11 +5,35 @@
   margin: 0;
   box-sizing: inherit;
 }
+
 html {
-  //it defines what rem is in this project
-  font-size: 62.5%;
+  //it defines what 1rem is in this project
+  font-size: 62.5%; //1rem=10px, 10px/16px=62.5%
+
+  //1em=16px
+
+  //1200px
+  @media (max-width: 75em) {
+    font-size: 56.25%;
+  }
+  //600px
+  @media (max-width: 37.5em) {
+    font-size: 50%;
+  }
+  //900px
+  @media (max-width: 56.25em) {
+    font-size: 50%;
+  }
+  //1800px
+  @media (min-width: 112.5em) {
+    font-size: 75%;
+  }
 }
 body {
   box-sizing: border-box;
-  
+  padding: 3rem;
+
+  @media (max-width: 56.25em) {
+    padding: 0;
+  }
 }

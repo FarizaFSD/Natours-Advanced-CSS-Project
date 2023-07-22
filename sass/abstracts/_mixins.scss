@@ -5,3 +5,18 @@
     clear: both;
   }
 }
+
+//Responsive markup _____  meadia queries
+// 0-600px Phone
+// 600-900 px  Tabler Portrait
+// 900-1200px Tablet Landscape
+// 1200-1800px Desktop
+// 1800px and more Big Desktop
+
+// @mixin respond($breakpoint) {
+//   @if $breakpoint==phone {
+//     @media (max-width: 600px) {
+//       @content;
+//     }
+//   }
+// }

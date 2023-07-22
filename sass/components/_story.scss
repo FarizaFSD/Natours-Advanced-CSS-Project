@@ -8,7 +8,14 @@
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
-
+  @media (max-width: 56.25em) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+  @media (max-width: 37.5em) {
+    transform: skewX(0);
+  }
   &__shape {
     width: 15rem;
     height: 15rem;
@@ -17,6 +24,9 @@
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
+    @media (max-width: 37.5em) {
+      transform: translateX(-3rem) skewX(0);
+    }
   }
   &__img {
     height: 100%;
@@ -26,6 +36,9 @@
   }
   &__text {
     transform: skewX(12deg);
+    @media (max-width: 37.5em) {
+      transform: skewX(0);
+    }
   }
   &__caption {
     position: absolute;
